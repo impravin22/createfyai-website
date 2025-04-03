@@ -1,0 +1,16 @@
+.pnpfinder{
+    position: relative;
+    margin: 120px;
+}
+
+.pnp-data > h1{
+text-align: center;
+color: aqua;
+
+}
+.pnp-data > img{
+    text-align: center;
+    width: 1000px;
+    height : 700px;
+    margin-left: 210px;
+}

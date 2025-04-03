@@ -1,0 +1,72 @@
+.prcalculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px !important;
+    margin: 20%;
+    position: relative;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px;
+    margin-top: 500px;
+}
+
+.form {
+    flex: 1;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.calculator {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.calculator h2 {
+    margin-bottom: 10px;
+}
+
+
+.prcalculator {
+    max-width: 80%;
+  }
+  
+  .australia-pr-calculator {
+    padding: 20px;
+  }
+  
+  .question {
+    font-weight: bold;
+  }
+  
+  .options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  
+  .options label {
+    margin-right: 20px;
+  }
+  
+  .user-details {
+    margin-top: 20px;
+  }
+  
+  .user-details .form-group {
+    margin-bottom: 10px;
+  }
+  
+  .calculate-button {
+    margin-top: 20px;
+  }
+  

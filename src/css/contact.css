@@ -1,0 +1,177 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #0d0e0e;
+}
+
+header {
+    background-color:#59fbf0 ;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+section {
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+.search{
+    width: 60%;
+    height: auto;
+    margin-left: 300px;
+}
+
+#myInput {
+    background-image: url("https://relishandroots.com/wp-content/uploads/2018/02/search-logo-1.png");
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    width: 94%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+  }
+  
+  #myUL {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #myUL li a {
+    border: 1px solid #ddd;
+    margin-top: -1px; 
+    background-color: #f6f6f6;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block
+  }
+  
+  #myUL li a:hover:not(.header) {
+    background-color: #eee;
+  }
+
+
+.flex-item{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .form-reg{
+    input[type="radio"]{
+      margin-right: 10px;
+      
+    }
+    input[type="text"], input[type="password"]{
+      width: 500px;
+      height: 40px;
+    }
+     input[type="tel"], input[type="date"],#remark{
+      width: 490px;
+      height: 40px;
+    }
+    #city,#country{
+      width: 500px;
+      height: 40px;
+    }
+    input[type="submit"]{
+      width: 500px;
+      height: 40px;
+      color: white;
+      background-color: #59fbf0;
+    }
+  }
+  .display-items{
+    display: flex;
+    justify-content: space-around;
+  }
+  .flag{
+    h2{
+      display: inline-block;
+      
+    }
+    img{
+      height: 100px;
+      width: 200px;
+      display: inline-block;
+    }
+  }
+  
+  .loader1 {
+    border: 9px solid #f3f3f3;
+    border-radius: 70%;
+    border-top: 16px solid #94eef5;
+    width: 70px;
+    height: 70px;
+    margin-left: 40%;
+    -webkit-animation: spin 5s linear infinite; 
+    animation: spin 1s linear infinite;
+  }
+/* 
+.chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.chat-popup-header {
+    background-color: #38fdf0;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-popup-title {
+    font-size: 16px;
+}
+
+.chat-popup-close {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.chat-popup-body {
+    padding: 15px;
+}
+
+.floating-chat-circle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #b1f3ef;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.floating-chat-circle img {
+    width: 40px;
+    height: 40px;
+} */
+

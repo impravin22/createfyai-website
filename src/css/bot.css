@@ -1,0 +1,110 @@
+.App {
+    text-align: center;
+  }
+  
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .App-header {
+    background-color: #6ee8e6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .glfuN {
+    align-items: center;
+    background: #91f8f4!important;
+    color: #fff;
+    display: flex;
+    height: 56px;
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+  .glfuN i {
+    fill: #fff;
+  }
+  .hQsUiY{
+    background: #36dfec !important;
+    border-radius: 18px 18px 18px 0;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.15);
+  }
+  .cRmLCo{
+    background: #36dfec !important;
+    border-radius: 0 18px 18px 18px;
+    box-shadow: 0 1px 2px 0 rgba(146, 146, 146, 0.15);
+  }
+  .jdhdOZ{
+    background: #36dfec !important;
+    border-radius: 22px;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.15);
+  }
+  .godhbL{
+    background: #36dfec !important;
+  }
+  button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px !important;
+    color: white;
+    background-color: #000;
+    text-align: center !important;
+    cursor: pointer !important;
+    width: 100% !important;
+    font-size: 18px;
+    border:1px solid aqua !important;
+}
+.hiexti {
+    background-color: transparent;
+    border: 0;
+    border-bottom-right-radius: 10px !important;
+    box-shadow: none;
+    cursor: pointer;
+    fill: #4a4a4a;
+    opacity: 1;
+    outline: none;
+    padding: 14px 16px 12px 16px !important;
+    position: absolute !important;
+    right: 0 !important;
+    top: 0 !important;
+    margin-left: 200px !important;
+}
+
+* {
+    position: relative;
+}
+.ipSaXD {
+    background: #90e2f1 !important;
+    border: 0;
+    border-radius: 22px;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.15);
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    padding: 12px;
+}
