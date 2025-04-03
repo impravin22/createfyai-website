@@ -340,7 +340,7 @@ const Home = () => {
                     </div>
                   </div>
                   <div className="tab-content-image">
-                    <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=2880,fit=crop/Aq2W0EP68Qc2ZLxz/nappy67_quantum_singularity_ai_transluscent_robots_virtual_re_c5f99879-c435-46a7-bf41-9eaf96ed32e9_2-mP4O4E4V9GtJwgyy.png" alt="Computer Vision Demo" />
+                    <img src="/createfyAI_images/Services/computervision.png" alt="Computer Vision Demo" />
                   </div>
                 </div>
               </div>
@@ -355,7 +355,7 @@ const Home = () => {
                     </div>
                   </div>
                   <div className="tab-content-image">
-                    <img src="/createfyAI_images/llm_architecture.png" alt="LLM Architecture" />
+                    <img src="/createfyAI_images/Services/llms.png" alt="LLM Architecture" />
                   </div>
                 </div>
               </div>
@@ -370,7 +370,7 @@ const Home = () => {
                     </div>
                   </div>
                   <div className="tab-content-image">
-                    <img src="/createfyAI_images/data_pipeline.png" alt="Data Pipeline Architecture" />
+                    <img src="/createfyAI_images/Services/Data_processing.png" alt="Data Pipeline Architecture" />
                   </div>
                 </div>
               </div>
@@ -385,7 +385,7 @@ const Home = () => {
                     </div>
                   </div>
                   <div className="tab-content-image">
-                    <img src="/createfyAI_images/ui_ux_design.png" alt="UI/UX Design Process" />
+                    <img src="/createfyAI_images/Services/UI_UX_design.png" alt="UI/UX Design Process" />
                   </div>
                 </div>
               </div>
@@ -400,7 +400,7 @@ const Home = () => {
                     </div>
                   </div>
                   <div className="tab-content-image">
-                    <img src="/createfyAI_images/ml_model_training.gif" alt="Machine Learning Model Training" />
+                    <img src="/createfyAI_images/Services/MachineLearning.png" alt="Machine Learning Model Training" />
                   </div>
                 </div>
               </div>

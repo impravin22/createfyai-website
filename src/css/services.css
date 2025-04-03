@@ -241,3 +241,67 @@ body{
       
     }
   
+/* AI Revolution Tabs Section */
+.ai-revolution-section {
+  margin: 50px auto;
+  max-width: 90%;
+  padding: 20px;
+}
+
+.ai-revolution-title {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: black;
+  text-shadow: 2px 5px rgba(51, 238, 123, 0.904);
+}
+
+.tabs-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.tab-item {
+  width: 30%;
+  min-width: 300px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.tab-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.tab-image {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.tab-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.tab-content {
+  color: #666;
+  line-height: 1.6;
+}
+
+@media screen and (max-width: 768px) {
+  .tab-item {
+    width: 100%;
+  }
+}
+  
