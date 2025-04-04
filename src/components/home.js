@@ -223,19 +223,19 @@ const Home = () => {
           
           <div className="partners-logos">
             <div className="partner-logo">
-              <img src="/createfyAI_images/odintech.svg" alt="Odintech" />
+              <img src={process.env.PUBLIC_URL + "/createfyAI_images/odintech.svg"} alt="Odintech" />
             </div>
             <div className="partner-logo">
-              <img src="/createfyAI_images/neurelli.svg" alt="Neurelli AI" />
+              <img src={process.env.PUBLIC_URL + "/createfyAI_images/neurelli.svg"} alt="Neurelli AI" />
             </div>
             <div className="partner-logo">
-              <img src="/createfyAI_images/agoda.svg" alt="Agoda" />
+              <img src={process.env.PUBLIC_URL + "/createfyAI_images/agoda.svg"} alt="Agoda" />
             </div>
             <div className="partner-logo">
-              <img src="/createfyAI_images/edelwess_air.svg" alt="Edelweiss Air" />
+              <img src={process.env.PUBLIC_URL + "/createfyAI_images/edelwess_air.svg"} alt="Edelweiss Air" />
             </div>
             <div className="partner-logo">
-              <img src="/createfyAI_images/magma.svg" alt="Magma" />
+              <img src={process.env.PUBLIC_URL + "/createfyAI_images/magma.svg"} alt="Magma" />
             </div>
           </div>
         </div>
@@ -325,7 +325,7 @@ const Home = () => {
                     </div>
                   </div>
                   <div className="tab-content-image">
-                    <img src="/createfyAI_images/Services/AgenticRAG.png" alt="RAG System Diagram" />
+                    <img src={process.env.PUBLIC_URL + "/createfyAI_images/Services/AgenticRAG.png"} alt="RAG System Diagram" />
                   </div>
                 </div>
               </div>
@@ -340,7 +340,7 @@ const Home = () => {
                     </div>
                   </div>
                   <div className="tab-content-image">
-                    <img src="/createfyAI_images/Services/computervision.png" alt="Computer Vision Demo" />
+                    <img src={process.env.PUBLIC_URL + "/createfyAI_images/Services/computervision.png"} alt="Computer Vision Demo" />
                   </div>
                 </div>
               </div>
@@ -355,7 +355,7 @@ const Home = () => {
                     </div>
                   </div>
                   <div className="tab-content-image">
-                    <img src="/createfyAI_images/Services/llms.png" alt="LLM Architecture" />
+                    <img src={process.env.PUBLIC_URL + "/createfyAI_images/Services/llms.png"} alt="LLM Architecture" />
                   </div>
                 </div>
               </div>
@@ -370,7 +370,7 @@ const Home = () => {
                     </div>
                   </div>
                   <div className="tab-content-image">
-                    <img src="/createfyAI_images/Services/Data_processing.png" alt="Data Pipeline Architecture" />
+                    <img src={process.env.PUBLIC_URL + "/createfyAI_images/Services/Data_processing.png"} alt="Data Pipeline Architecture" />
                   </div>
                 </div>
               </div>
@@ -385,7 +385,7 @@ const Home = () => {
                     </div>
                   </div>
                   <div className="tab-content-image">
-                    <img src="/createfyAI_images/Services/UI_UX_design.png" alt="UI/UX Design Process" />
+                    <img src={process.env.PUBLIC_URL + "/createfyAI_images/Services/UI_UX_design.png"} alt="UI/UX Design Process" />
                   </div>
                 </div>
               </div>
@@ -400,7 +400,7 @@ const Home = () => {
                     </div>
                   </div>
                   <div className="tab-content-image">
-                    <img src="/createfyAI_images/Services/MachineLearning.png" alt="Machine Learning Model Training" />
+                    <img src={process.env.PUBLIC_URL + "/createfyAI_images/Services/MachineLearning.png"} alt="Machine Learning Model Training" />
                   </div>
                 </div>
               </div>
@@ -418,7 +418,7 @@ const Home = () => {
           </p>
           
           <div className="world-map">
-            <img src="/createfyAI_images/world_map.svg" alt="World Map" style={{ maxWidth: '950px', width: '100%', margin: '20px auto' }}/>
+            <img src={process.env.PUBLIC_URL + "/createfyAI_images/world_map.svg"} alt="World Map" style={{ maxWidth: '950px', width: '100%', margin: '20px auto' }}/>
           </div>
           
           <p className="team-locations">
