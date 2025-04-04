@@ -258,6 +258,22 @@ button:hover {
   .about-image img {
     max-width: 100%;
   }
+  
+  /* Make the contact container more responsive */
+  .contact-container {
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  .contact-form,
+  .contact-info {
+    flex: 1 1 100%;
+    padding: 30px 20px;
+  }
+  
+  .contact-info {
+    border-radius: 0 0 12px 12px;
+  }
 }
 
 /* Section Tabs */
@@ -1036,6 +1052,7 @@ button:hover {
   margin-left: auto;
   margin-right: auto;
   overflow-x: auto; /* Allow horizontal scrolling on smaller screens */
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
 }
 
 .partner-logo {
@@ -1322,7 +1339,7 @@ button:hover {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* Responsive Adjustments for AI Revolution Tabs */
+/* IMPROVED RESPONSIVENESS FOR AI TABS */
 @media (max-width: 992px) {
   .ai-tabs {
     flex-wrap: wrap;
@@ -1330,6 +1347,7 @@ button:hover {
   
   .ai-tab {
     flex: 0 0 33.33%;
+    min-width: 120px;
   }
   
   .ai-revolution-section {
@@ -1337,11 +1355,12 @@ button:hover {
   }
   
   .ai-tab-content {
-    padding: 30px;
+    padding: 30px 20px;
   }
   
   .tab-content-flex {
     flex-direction: column;
+    gap: 20px;
   }
   
   .tab-content-text {
@@ -1350,31 +1369,80 @@ button:hover {
   
   .tab-content-image {
     order: 1;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .ai-tab-pane p {
+    max-width: 100%;
   }
 }
 
 @media (max-width: 768px) {
   .ai-tab {
     flex: 0 0 50%;
+    min-width: 0;
+  }
+  
+  .ai-tab label {
+    padding: 12px 8px;
+    font-size: 13px;
+  }
+  
+  .partners-section {
+    padding: 50px 15px;
+  }
+  
+  .partners-section h2 {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+  
+  .partners-logos {
+    padding: 20px;
+    gap: 10px;
+  }
+  
+  .partner-logo {
+    width: 150px;
+    height: 75px;
   }
   
   .ai-tab-pane h3 {
-    font-size: 24px;
+    font-size: 22px;
+    margin-bottom: 15px;
   }
   
   .ai-tab-pane p {
     font-size: 15px;
-    max-width: 100%;
+    line-height: 1.5;
   }
   
-  .ai-tab-content {
-    padding: 25px;
-    min-height: 220px;
+  /* Make hero section adapt better on mobile */
+  .hero-section {
+    height: auto;
+    min-height: 450px;
+    padding-top: 80px;
+    padding-bottom: 40px;
   }
   
-  .tab-content-image img {
-    max-height: 200px;
+  .hero-section h1 {
+    font-size: 28px;
+  }
+  
+  .hero-section p {
+    font-size: 14px;
+  }
+  
+  /* Improve grid sections on mobile */
+  .strategy-grid-container,
+  .approach-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .createfy-approach-section,
+  .strategy-grid-section {
+    padding: 40px 15px;
   }
 }
 
@@ -1383,17 +1451,90 @@ button:hover {
     flex: 0 0 100%;
   }
   
-  .ai-tab label {
-    padding: 12px 8px;
-    font-size: 13px;
+  .ai-revolution-section h2 {
+    font-size: 24px;
+  }
+  
+  .ai-revolution-subtitle {
+    font-size: 16px;
+    margin-bottom: 25px;
   }
   
   .ai-tab-content {
-    padding: 20px;
+    padding: 20px 15px;
+    min-height: 200px;
   }
   
-  .ai-tab-pane h3 {
-    font-size: 20px;
+  .partner-logo {
+    width: 120px;
+    height: 65px;
+  }
+  
+  .tab-cta .white-button {
+    width: 100%;
+    max-width: none;
+    text-align: center;
+  }
+  
+  /* Team info section improvements */
+  .team-info-section {
+    padding: 40px 15px;
+  }
+  
+  .team-info-section h2 {
+    font-size: 24px;
+  }
+  
+  /* Contact improvements */
+  .contact-section .section-container {
+    padding: 50px 15px 40px;
+  }
+  
+  .contact-form,
+  .contact-info {
+    padding: 25px 15px;
+  }
+}
+
+/* Hero section further improvements for mobile */
+@media (max-width: 480px) {
+  .hero-section {
+    min-height: 400px;
+  }
+  
+  .hero-content {
+    width: 100%;
+  }
+  
+  .hero-section h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .hero-section p {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-section button {
+    min-width: 140px;
+    font-size: 12px;
+  }
+  
+  /* Strategy sections */
+  .strategy-image, 
+  .approach-image {
+    height: 160px;
+  }
+  
+  .strategy-content h3,
+  .approach-content h3 {
+    font-size: 18px;
+  }
+  
+  .strategy-content p,
+  .approach-content p {
+    font-size: 13px;
   }
 }
 
