@@ -2,7 +2,7 @@
   "name": "abroad_consultancy",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://kumarpr.github.io/abroad_consultancy",
+  "homepage": "https://createfyai.com",
   "dependencies": {
     "@craco/craco": "^7.1.0",
     "@testing-library/jest-dom": "^5.17.0",
@@ -45,6 +45,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.3.0"
+    "gh-pages": "^6.1.1"
   }
 }
