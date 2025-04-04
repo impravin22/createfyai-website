@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/createfyai-website/static/css/main.5637ea43.css",
-    "main.js": "/createfyai-website/static/js/main.a71ff39b.js",
-    "index.html": "/createfyai-website/index.html",
-    "main.5637ea43.css.map": "/createfyai-website/static/css/main.5637ea43.css.map",
-    "main.a71ff39b.js.map": "/createfyai-website/static/js/main.a71ff39b.js.map"
+    "main.css": "/static/css/main.5637ea43.css",
+    "main.js": "/static/js/main.d91592af.js",
+    "index.html": "/index.html",
+    "main.5637ea43.css.map": "/static/css/main.5637ea43.css.map",
+    "main.d91592af.js.map": "/static/js/main.d91592af.js.map"
   },
   "entrypoints": [
     "static/css/main.5637ea43.css",
-    "static/js/main.a71ff39b.js"
+    "static/js/main.d91592af.js"
   ]
 }
