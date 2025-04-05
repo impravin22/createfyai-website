@@ -1,12 +1,13 @@
 import '../css/footer.css';
 import React from 'react';
+import { T } from './Translation';
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-bottom">
         <div className="footer-container">
-          <p>&copy; 2025 CreatefyAI. All rights reserved.</p>
+          <p><T keyPath="footer.copyright" /></p>
         </div>
       </div>
     </footer>

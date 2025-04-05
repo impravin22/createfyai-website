@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import "../css/home.css";
+import { T, useTranslation } from './Translation';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -13,6 +14,9 @@ const Home = () => {
     company: "",
     message: "",
   });
+  
+  // Get translation function
+  const { translate } = useTranslation();
   
   // State for AI solution tabs
   const [activeSolutionTab, setActiveSolutionTab] = useState('tab-agentic-rags');
@@ -163,17 +167,17 @@ const Home = () => {
         backgroundPosition: 'center'
       }}>
         <div className="hero-content">
-          <h1>Taiwan AI Consultancy Services</h1>
-          <p>AI Automation Solutions for Business Growth – Custom Tools, Streamlined Operations, and Expert Analytics. Co-owned by Engineers to Maximize Your Investment and Deliver Unmatched Value.</p>
-          <button onClick={() => scrollToSection('contact')}>Contact our experts</button>
+          <h1><T keyPath="hero.title" /></h1>
+          <p><T keyPath="hero.subtitle" /></p>
+          <button onClick={() => scrollToSection('contact')}><T keyPath="hero.cta" /></button>
         </div>
       </section>
 
       {/* Strategies Section */}
       <section id="strategies-intro-section" className="strategies-intro-section">
         <div className="strategies-intro-container">
-          <h2>Strategies to maximize AI Value</h2>
-          <p>AI Development for E-commerce, Hardware, Supermarkets, Automated Factories, Software Companies and SaaS without expensive fees or middle man</p>
+          <h2><T keyPath="strategies.title" /></h2>
+          <p><T keyPath="strategies.subtitle" /></p>
         </div>
       </section>
 
@@ -185,8 +189,8 @@ const Home = () => {
               <img src="https://assets.zyrosite.com/Aq2W0EP68Qc2ZLxz/gyphy-chatbot-answers-and-questions-Aq2W2M79ZlFpgQoB.gif" alt="AI Chatbot" />
             </div>
             <div className="strategy-content">
-              <h3>AI Conversational Intelligence</h3>
-              <p>Full autonomous chatbots, sentiment analysis and big data processing. Knowledge distillation approach and others are our main tools</p>
+              <h3><T keyPath="strategyGrid.item1.title" /></h3>
+              <p><T keyPath="strategyGrid.item1.description" /></p>
             </div>
           </div>
           
@@ -195,8 +199,8 @@ const Home = () => {
               <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=800,fit=scale-down/Aq2W0EP68Qc2ZLxz/avinftmarketer_create_a_cover_image_for_a_podcast_for_financi_260a3f46-e4a0-4b2e-8ea9-5d38df7654a8_3-YX4l471gyKhgR8KY.png" alt="Business Transformation" />
             </div>
             <div className="strategy-content">
-              <h3>Reshape Business Functions</h3>
-              <p>In our lab we analyze business oriented solutions to improve your company. We integrate into your workflows with our comprehensive suite of AI services.</p>
+              <h3><T keyPath="strategyGrid.item2.title" /></h3>
+              <p><T keyPath="strategyGrid.item2.description" /></p>
             </div>
           </div>
           
@@ -205,8 +209,8 @@ const Home = () => {
               <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=800,fit=scale-down/Aq2W0EP68Qc2ZLxz/image-7-AMq1q3lJeKFEpB4n.png" alt="Industry Solutions" />
             </div>
             <div className="strategy-content">
-              <h3>Industry-Specific Solutions</h3>
-              <p>No matter if it's textiles, high-tech apps, smart manufacture, business insights with 10 years of experience, we streamline to provide you the right tools on time.</p>
+              <h3><T keyPath="strategyGrid.item3.title" /></h3>
+              <p><T keyPath="strategyGrid.item3.description" /></p>
             </div>
           </div>
         </div>
@@ -219,7 +223,7 @@ const Home = () => {
         backgroundPosition: 'center'
       }}>
         <div className="partners-container">
-          <h2>Empowering Businesses with AI</h2>
+          <h2><T keyPath="partners.title" /></h2>
           
           <div className="partners-logos">
             <div className="partner-logo">
@@ -244,7 +248,7 @@ const Home = () => {
       {/* Approach Section */}
       <section id="approach-section" className="createfy-approach-section">
         <div className="approach-container">
-          <h2>CreatefyAi Approach</h2>
+          <h2><T keyPath="approach.title" /></h2>
           
           <div className="approach-grid">
             <div className="approach-grid-item">
@@ -252,8 +256,8 @@ const Home = () => {
                 <img src="https://assets.zyrosite.com/Aq2W0EP68Qc2ZLxz/20250323_1705_innovative-team-collaboration_simple_compose_01jq140jyrext851jjj3rtpqe5-mjE7xPRReqsP4z6Z.gif" alt="Efficient Small Team" />
               </div>
               <div className="approach-content">
-                <h3>Efficient Small team</h3>
-                <p>As a co-op, we're fully owned and operated by our engineers, ensuring you get direct access to the creators of your solution without middleman fees.</p>
+                <h3><T keyPath="approach.item1.title" /></h3>
+                <p><T keyPath="approach.item1.description" /></p>
               </div>
             </div>
             
@@ -262,8 +266,8 @@ const Home = () => {
                 <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=606,fit=scale-down/Aq2W0EP68Qc2ZLxz/595826b9-fde1-4f2f-8cd9-9df4fb537c57-AGB2qX5VDnCE30GK.png" alt="Owned & Operated by Developers" />
               </div>
               <div className="approach-content">
-                <h3>Owned & Operated by Developers</h3>
-                <p>We deliver high-quality AI solutions on time, maximizing your ROI by providing top-tier results at a cost-effective rate.</p>
+                <h3><T keyPath="approach.item2.title" /></h3>
+                <p><T keyPath="approach.item2.description" /></p>
               </div>
             </div>
             
@@ -272,8 +276,8 @@ const Home = () => {
                 <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=800,fit=scale-down/Aq2W0EP68Qc2ZLxz/avinftmarketer_create_a_cover_image_for_a_podcast_for_financi_8bde1b10-fe5f-405a-beec-36422e01149e_1-YD0l0M0WO1HRv3Np.png" alt="On-Time Delivery" />
               </div>
               <div className="approach-content">
-                <h3>On-Time Delivery- Your Investment Goes Further</h3>
-                <p>Our small, agile team works quickly and efficiently, ensuring fast project turnaround with no unnecessary delays.</p>
+                <h3><T keyPath="approach.item3.title" /></h3>
+                <p><T keyPath="approach.item3.description" /></p>
               </div>
             </div>
           </div>
@@ -283,34 +287,46 @@ const Home = () => {
       {/* AI Revolution Section - Tabbed Interface */}
       <section id="ai-revolution-section" className="ai-revolution-section">
         <div className="ai-revolution-container">
-          <h2>Be ahead in the AI revolution</h2>
-          <p className="ai-revolution-subtitle">Explore our AI solutions</p>
+          <h2><T keyPath="aiRevolution.title" /></h2>
+          <p className="ai-revolution-subtitle"><T keyPath="aiRevolution.subtitle" /></p>
           
           <div className="ai-tabs-container">
             <div className="ai-tabs">
               <div className={`ai-tab ${activeSolutionTab === 'tab-agentic-rags' ? 'active' : ''}`}>
                 <input type="radio" name="ai-tab" id="tab-agentic-rags" defaultChecked onChange={() => handleSolutionTabClick('tab-agentic-rags')} />
-                <label htmlFor="tab-agentic-rags" onClick={() => handleSolutionTabClick('tab-agentic-rags')}>AGENTIC RAGs</label>
+                <label htmlFor="tab-agentic-rags" onClick={() => handleSolutionTabClick('tab-agentic-rags')}>
+                  <T keyPath="aiRevolution.tabs.agentic" />
+                </label>
               </div>
               <div className={`ai-tab ${activeSolutionTab === 'tab-computer-vision' ? 'active' : ''}`}>
                 <input type="radio" name="ai-tab" id="tab-computer-vision" onChange={() => handleSolutionTabClick('tab-computer-vision')} />
-                <label htmlFor="tab-computer-vision" onClick={() => handleSolutionTabClick('tab-computer-vision')}>COMPUTER VISION</label>
+                <label htmlFor="tab-computer-vision" onClick={() => handleSolutionTabClick('tab-computer-vision')}>
+                  <T keyPath="aiRevolution.tabs.computerVision" />
+                </label>
               </div>
               <div className={`ai-tab ${activeSolutionTab === 'tab-llms' ? 'active' : ''}`}>
                 <input type="radio" name="ai-tab" id="tab-llms" onChange={() => handleSolutionTabClick('tab-llms')} />
-                <label htmlFor="tab-llms" onClick={() => handleSolutionTabClick('tab-llms')}>LLMs</label>
+                <label htmlFor="tab-llms" onClick={() => handleSolutionTabClick('tab-llms')}>
+                  <T keyPath="aiRevolution.tabs.llms" />
+                </label>
               </div>
               <div className={`ai-tab ${activeSolutionTab === 'tab-data-engineering' ? 'active' : ''}`}>
                 <input type="radio" name="ai-tab" id="tab-data-engineering" onChange={() => handleSolutionTabClick('tab-data-engineering')} />
-                <label htmlFor="tab-data-engineering" onClick={() => handleSolutionTabClick('tab-data-engineering')}>DATA ENGINEERING</label>
+                <label htmlFor="tab-data-engineering" onClick={() => handleSolutionTabClick('tab-data-engineering')}>
+                  <T keyPath="aiRevolution.tabs.dataEngineering" />
+                </label>
               </div>
               <div className={`ai-tab ${activeSolutionTab === 'tab-ui-ux' ? 'active' : ''}`}>
                 <input type="radio" name="ai-tab" id="tab-ui-ux" onChange={() => handleSolutionTabClick('tab-ui-ux')} />
-                <label htmlFor="tab-ui-ux" onClick={() => handleSolutionTabClick('tab-ui-ux')}>UI/UX - WEB APP</label>
+                <label htmlFor="tab-ui-ux" onClick={() => handleSolutionTabClick('tab-ui-ux')}>
+                  <T keyPath="aiRevolution.tabs.uiUx" />
+                </label>
               </div>
               <div className={`ai-tab ${activeSolutionTab === 'tab-machine-learning' ? 'active' : ''}`}>
                 <input type="radio" name="ai-tab" id="tab-machine-learning" onChange={() => handleSolutionTabClick('tab-machine-learning')} />
-                <label htmlFor="tab-machine-learning" onClick={() => handleSolutionTabClick('tab-machine-learning')}>MACHINE LEARNING</label>
+                <label htmlFor="tab-machine-learning" onClick={() => handleSolutionTabClick('tab-machine-learning')}>
+                  <T keyPath="aiRevolution.tabs.machineLearning" />
+                </label>
               </div>
             </div>
             
@@ -318,10 +334,12 @@ const Home = () => {
               <div className={`ai-tab-pane ${activeSolutionTab === 'tab-agentic-rags' ? 'active' : ''}`} id="content-agentic-rags">
                 <div className="tab-content-flex">
                   <div className="tab-content-text">
-                    <h3>Agentic RAGs (Retrieval-Augmented Generation)</h3>
-                    <p>Our advanced RAG systems combine the power of information retrieval with generative AI to provide contextually accurate responses based on your organization's data. Perfect for knowledge bases, customer support, and internal documentation.</p>
+                    <h3><T keyPath="aiRevolution.content.agentic.title" /></h3>
+                    <p><T keyPath="aiRevolution.content.agentic.description" /></p>
                     <div className="tab-cta">
-                      <button className="white-button" onClick={() => scrollToSection('contact')}>Contact Us</button>
+                      <button className="white-button" onClick={() => scrollToSection('contact')}>
+                        <T keyPath="aiRevolution.cta" />
+                      </button>
                     </div>
                   </div>
                   <div className="tab-content-image">
@@ -333,10 +351,12 @@ const Home = () => {
               <div className={`ai-tab-pane ${activeSolutionTab === 'tab-computer-vision' ? 'active' : ''}`} id="content-computer-vision">
                 <div className="tab-content-flex">
                   <div className="tab-content-text">
-                    <h3>Computer Vision</h3>
-                    <p>Transform visual data into actionable insights with our computer vision solutions. From object detection and facial recognition to quality control and automated inspection, we build custom vision systems for manufacturing, retail, security, and healthcare applications.</p>
+                    <h3><T keyPath="aiRevolution.content.computerVision.title" /></h3>
+                    <p><T keyPath="aiRevolution.content.computerVision.description" /></p>
                     <div className="tab-cta">
-                      <button className="white-button" onClick={() => scrollToSection('contact')}>Contact Us</button>
+                      <button className="white-button" onClick={() => scrollToSection('contact')}>
+                        <T keyPath="aiRevolution.cta" />
+                      </button>
                     </div>
                   </div>
                   <div className="tab-content-image">
@@ -348,10 +368,12 @@ const Home = () => {
               <div className={`ai-tab-pane ${activeSolutionTab === 'tab-llms' ? 'active' : ''}`} id="content-llms">
                 <div className="tab-content-flex">
                   <div className="tab-content-text">
-                    <h3>Large Language Models (LLMs)</h3>
-                    <p>Leverage the power of custom-trained and fine-tuned language models for your specific industry needs. Our LLM solutions include content generation, summarization, classification, sentiment analysis, and domain-specific assistants that understand your business context.</p>
+                    <h3><T keyPath="aiRevolution.content.llms.title" /></h3>
+                    <p><T keyPath="aiRevolution.content.llms.description" /></p>
                     <div className="tab-cta">
-                      <button className="white-button" onClick={() => scrollToSection('contact')}>Contact Us</button>
+                      <button className="white-button" onClick={() => scrollToSection('contact')}>
+                        <T keyPath="aiRevolution.cta" />
+                      </button>
                     </div>
                   </div>
                   <div className="tab-content-image">
@@ -363,10 +385,12 @@ const Home = () => {
               <div className={`ai-tab-pane ${activeSolutionTab === 'tab-data-engineering' ? 'active' : ''}`} id="content-data-engineering">
                 <div className="tab-content-flex">
                   <div className="tab-content-text">
-                    <h3>Data Engineering</h3>
-                    <p>Build robust data pipelines and infrastructure to fuel your AI initiatives. We design scalable data architectures, implement ETL processes, and develop data lakes/warehouses that form the foundation for reliable AI systems. Our solutions ensure your data is clean, accessible, and ready for analysis.</p>
+                    <h3><T keyPath="aiRevolution.content.dataEngineering.title" /></h3>
+                    <p><T keyPath="aiRevolution.content.dataEngineering.description" /></p>
                     <div className="tab-cta">
-                      <button className="white-button" onClick={() => scrollToSection('contact')}>Contact Us</button>
+                      <button className="white-button" onClick={() => scrollToSection('contact')}>
+                        <T keyPath="aiRevolution.cta" />
+                      </button>
                     </div>
                   </div>
                   <div className="tab-content-image">
@@ -378,10 +402,12 @@ const Home = () => {
               <div className={`ai-tab-pane ${activeSolutionTab === 'tab-ui-ux' ? 'active' : ''}`} id="content-ui-ux">
                 <div className="tab-content-flex">
                   <div className="tab-content-text">
-                    <h3>UI/UX - Web Applications</h3>
-                    <p>Create intuitive and engaging interfaces for your AI-powered applications. Our design team builds user experiences that make complex AI capabilities accessible and valuable to end-users. From dashboards and visualization tools to interactive AI assistants, we ensure your solutions are both powerful and easy to use.</p>
+                    <h3><T keyPath="aiRevolution.content.uiUx.title" /></h3>
+                    <p><T keyPath="aiRevolution.content.uiUx.description" /></p>
                     <div className="tab-cta">
-                      <button className="white-button" onClick={() => scrollToSection('contact')}>Contact Us</button>
+                      <button className="white-button" onClick={() => scrollToSection('contact')}>
+                        <T keyPath="aiRevolution.cta" />
+                      </button>
                     </div>
                   </div>
                   <div className="tab-content-image">
@@ -393,10 +419,12 @@ const Home = () => {
               <div className={`ai-tab-pane ${activeSolutionTab === 'tab-machine-learning' ? 'active' : ''}`} id="content-machine-learning">
                 <div className="tab-content-flex">
                   <div className="tab-content-text">
-                    <h3>Machine Learning</h3>
-                    <p>Develop predictive models and decision systems tailored to your business challenges. Our machine learning solutions include demand forecasting, recommendation engines, anomaly detection, and optimization algorithms that drive efficiency and uncover insights from your data.</p>
+                    <h3><T keyPath="aiRevolution.content.machineLearning.title" /></h3>
+                    <p><T keyPath="aiRevolution.content.machineLearning.description" /></p>
                     <div className="tab-cta">
-                      <button className="white-button" onClick={() => scrollToSection('contact')}>Contact Us</button>
+                      <button className="white-button" onClick={() => scrollToSection('contact')}>
+                        <T keyPath="aiRevolution.cta" />
+                      </button>
                     </div>
                   </div>
                   <div className="tab-content-image">
@@ -412,9 +440,9 @@ const Home = () => {
       {/* Team Info Section - Integrated with World Map */}
       <section id="team-info-section" className="team-info-section">
         <div className="team-info-container">
-          <h2>Our Global Team</h2>
+          <h2><T keyPath="teamInfo.title" /></h2>
           <p className="team-info-text">
-            Our multilingual team works <strong>directly with you</strong>, <strong>avoiding the middle man fees</strong>, we provide best in class tailored services. Our team includes AI engineers, Machine Learning engineers, Project Managers, UI/UX designers and Business developers. We understand the culture and together we speak 4 languages: Chinese, English, Spanish, and Portuguese.
+            <T keyPath="teamInfo.description" />
           </p>
           
           <div className="world-map">
@@ -422,7 +450,7 @@ const Home = () => {
           </div>
           
           <p className="team-locations">
-            Offices in <strong>Peru</strong>, <strong>Taipei</strong> and <strong>India</strong>.
+            <T keyPath="teamInfo.locations" />
           </p>
         </div>
       </section>
@@ -432,8 +460,8 @@ const Home = () => {
       <section ref={contactRef} id="contact" className="contact-section">
         <div className="section-container">
           <div className="section-header">
-            <h2>Connect With Our AI Experts</h2>
-            <p className="section-subtitle">Let's discuss how AI can transform your business</p>
+            <h2><T keyPath="contact.title" /></h2>
+            <p className="section-subtitle"><T keyPath="contact.subtitle" /></p>
           </div>
 
           <div className="contact-container">
@@ -443,7 +471,7 @@ const Home = () => {
                   <input
                     type="text"
                     name="name"
-                    placeholder="Your Name"
+                    placeholder={translate("contact.form.name")}
                     value={formData.name}
                     onChange={handleInputChange}
                     required
@@ -453,7 +481,7 @@ const Home = () => {
                   <input
                     type="email"
                     name="email"
-                    placeholder="Email Address"
+                    placeholder={translate("contact.form.email")}
                     value={formData.email}
                     onChange={handleInputChange}
                     required
@@ -463,33 +491,33 @@ const Home = () => {
                 <div className="form-group">
                   <textarea
                     name="message"
-                    placeholder="How can we help you?"
+                    placeholder={translate("contact.form.message")}
                     value={formData.message}
                     onChange={handleInputChange}
                     required
                   ></textarea>
                 </div>
-                <button type="submit" className="submit-btn">Get in Touch</button>
+                <button type="submit" className="submit-btn"><T keyPath="contact.form.submit" /></button>
               </form>
             </div>
             <div className="contact-info">
-              <h3>Contact Us</h3>
-              <p>Our team is ready to help with your AI project needs.</p>
+              <h3><T keyPath="contact.info.title" /></h3>
+              <p><T keyPath="contact.info.description" /></p>
               
               <div className="contact-options">
                 <div className="contact-option">
                   <div className="option-icon email"></div>
                   <div className="option-content">
-                    <h4>Email</h4>
-                    <p>engineering@createfyai.com</p>
+                    <h4><T keyPath="contact.info.email" /></h4>
+                    <p><T keyPath="contact.info.emailAddress" /></p>
                   </div>
                 </div>
 
                 <div className="contact-option">
                   <div className="option-icon location"></div>
                   <div className="option-content">
-                    <h4>Global Team</h4>
-                    <p>Taipei • Peru • India</p>
+                    <h4><T keyPath="contact.info.location" /></h4>
+                    <p><T keyPath="contact.info.locations" /></p>
                   </div>
                 </div>
               </div>

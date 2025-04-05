@@ -4,6 +4,7 @@ import Home from './components/home';
 import NavBar from './components/navbar';
 import Footer from './components/footer';
 import Contact from './components/contact';
+import { LanguageProvider } from './context/LanguageContext';
 
 // Temporary placeholder component for routes we haven't built yet
 const ComingSoon = () => (
@@ -15,8 +16,9 @@ const ComingSoon = () => (
 
 function App() {
   return (
-    <Router>
-      <div>
+    <LanguageProvider>
+      <Router>
+        <div>
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -40,6 +42,7 @@ function App() {
         <Footer />
       </div>
     </Router>
+    </LanguageProvider>
   );
 }
 

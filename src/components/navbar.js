@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import "../css/navbar.css";
+import { useLanguage } from '../context/LanguageContext';
+import { T } from './Translation';
 
 const scrollToTop = () => {
   window.scrollTo({
@@ -24,7 +26,16 @@ function NavBar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [languageDropdownOpen, setLanguageDropdownOpen] = useState(false);
-  const [currentLanguage, setCurrentLanguage] = useState('English');
+  
+  // Use the language context
+  const { language, changeLanguage } = useLanguage();
+  
+  // Map language codes to display names
+  const languageNames = {
+    en: 'English',
+    es: 'Español',
+    zh: '中文'
+  };
 
   // Add scroll event listener to detect when user scrolls
   useEffect(() => {
@@ -67,8 +78,9 @@ function NavBar() {
     setLanguageDropdownOpen(!languageDropdownOpen);
   };
 
-  const selectLanguage = (language) => {
-    setCurrentLanguage(language);
+  // Modified to use language codes and changeLanguage
+  const selectLanguage = (langCode) => {
+    changeLanguage(langCode);
     setLanguageDropdownOpen(false);
   };
 
@@ -100,30 +112,38 @@ function NavBar() {
         <nav className={`navbar-links ${mobileMenuOpen ? 'active' : ''}`}>
           <ul>
             <li>
-              <a href="#hero" onClick={(e) => { e.preventDefault(); handleNavLinkClick('hero'); }}>Home</a>
+              <a href="#hero" onClick={(e) => { e.preventDefault(); handleNavLinkClick('hero'); }}>
+                <T keyPath="nav.home" />
+              </a>
             </li>
             <li>
-              <a href="#strategy-grid" onClick={(e) => { e.preventDefault(); handleNavLinkClick('strategy-grid-section'); }}>Solutions</a>
+              <a href="#strategy-grid" onClick={(e) => { e.preventDefault(); handleNavLinkClick('strategy-grid-section'); }}>
+                <T keyPath="nav.solutions" />
+              </a>
             </li>
             <li>
-              <a href="#team-info" onClick={(e) => { e.preventDefault(); handleNavLinkClick('team-info-section'); }}>About</a>
+              <a href="#team-info" onClick={(e) => { e.preventDefault(); handleNavLinkClick('team-info-section'); }}>
+                <T keyPath="nav.about" />
+              </a>
             </li>
             <li>
-              <a href="#contact" onClick={(e) => { e.preventDefault(); handleNavLinkClick('contact'); }}>Contact</a>
+              <a href="#contact" onClick={(e) => { e.preventDefault(); handleNavLinkClick('contact'); }}>
+                <T keyPath="nav.contact" />
+              </a>
             </li>
             <li className="language-switcher">
               <div className="selected-language" onClick={toggleLanguageDropdown}>
-                {currentLanguage} <span className="dropdown-arrow">▼</span>
+                {languageNames[language]} <span className="dropdown-arrow">▼</span>
               </div>
               {languageDropdownOpen && (
                 <div className="language-dropdown">
-                  <div className="language-option" onClick={() => selectLanguage('English')}>
+                  <div className="language-option" onClick={() => selectLanguage('en')}>
                     English
                   </div>
-                  <div className="language-option" onClick={() => selectLanguage('Español')}>
+                  <div className="language-option" onClick={() => selectLanguage('es')}>
                     Español
                   </div>
-                  <div className="language-option" onClick={() => selectLanguage('中文')}>
+                  <div className="language-option" onClick={() => selectLanguage('zh')}>
                     中文
                   </div>
                 </div>
