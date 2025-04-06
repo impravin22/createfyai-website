@@ -6,67 +6,67 @@ const zh = {
     solutions: "解決方案",
     about: "關於我們",
     contact: "聯絡我們",
-    language: "中文"
+    language: "繁體中文"
   },
   
   // Hero Section
   hero: {
-    title: "台灣人工智能顧問服務",
-    subtitle: "為企業成長提供人工智能自動化解決方案 – 定制工具、優化運營和專業分析。由工程師共同擁有，最大化您的投資並提供無與倫比的價值。",
-    cta: "聯繫我們的專家"
+    title: "台灣人工智慧顧問服務",
+    subtitle: "為企業量身打造 AI 自動化解決方案 — 客製工具、流程優化、專業分析，全部由工程師擁有與營運，讓您的投資發揮最大效益。",
+    cta: "立即聯絡我們的專家"
   },
   
   // Strategies Section
   strategies: {
-    title: "最大化人工智能價值的策略",
-    subtitle: "為電子商務、硬件、超市、自動化工廠、軟件公司和SaaS開發人工智能，無需昂貴費用或中間商"
+    title: "最大化 AI 價值的策略",
+    subtitle: "我們為電商、硬體、超市、自動化工廠、軟體公司與 SaaS 提供專屬的 AI 解決方案，無需高額支出或中間商"
   },
   
   // Strategy Grid
   strategyGrid: {
     item1: {
-      title: "人工智能對話情報",
-      description: "完全自主的聊天機器人、情感分析和大數據處理。知識提煉方法等是我們的主要工具"
+      title: "AI 對話智能",
+      description: "我們開發完全自主的聊天機器人、情緒分析與大數據處理，並運用知識提取等技術，提升互動效率與洞察力。"
     },
     item2: {
-      title: "重塑業務功能",
-      description: "在我們的實驗室中，我們分析以業務為導向的解決方案，以改進您的公司。我們通過全面的人工智能服務集成到您的工作流程中。"
+      title: "重塑企業流程",
+      description: "我們在實驗室中分析並打造以商業導向為核心的解決方案，整合完整的 AI 服務到您的營運流程中。"
     },
     item3: {
-      title: "行業特定解決方案",
-      description: "無論是紡織品、高科技應用、智能製造，還是擁有10年經驗的業務洞察，我們都能精簡流程，為您及時提供合適的工具。"
+      title: "產業專屬解決方案",
+      description: "從紡織、科技、智慧製造到擁有十年經驗的行業見解，我們為您簡化流程、量身打造合適工具。"
     }
   },
   
   // Partners Section
   partners: {
-    title: "以人工智能賦能企業"
+    title: "用 AI 賦能每一家企業"
   },
   
   // Approach Section
   approach: {
-    title: "CreatefyAi 方法",
+    title: "CreatefyAI 方法論",
     item1: {
-      title: "高效小團隊",
-      description: "作為合作社，我們完全由工程師擁有和經營，確保您可以直接接觸解決方案的創造者，無需支付中間商費用。"
+      title: "精實團隊運作",
+      description: "我們是一家由工程師共同擁有與營運的合作社，讓您直接接觸解決方案的開發者，省去中間成本。"
     },
     item2: {
-      title: "由開發者擁有和經營",
-      description: "我們按時交付高品質的人工智能解決方案，通過以具成本效益的價格提供頂級結果來最大化您的投資回報率。"
+      title: "工程師自主經營",
+      description: "我們承諾準時交付高品質的 AI 解決方案，以具競爭力的價格創造最佳效益。"
     },
     item3: {
-      title: "準時交付 - 您的投資更有價值",
-      description: "我們的小型靈活團隊快速高效地工作，確保項目快速周轉，無不必要的延遲。"
+      title: "準時交付、投資更具價值",
+      description: "小型敏捷團隊快速反應、高效率執行，確保項目如期完成。"
     }
   },
   
   // AI Revolution Section
   aiRevolution: {
-    title: "在人工智能革命中領先一步",
-    subtitle: "探索我們的人工智能解決方案",
+    title: "搶先掌握 AI 革命",
+    subtitle: "探索我們的 AI 解決方案",
     tabs: {
-      agentic: "代理式RAG",
-      computerVision: "計算機視覺",
+      agentic: "代理式 RAG",
+      computerVision: "電腦視覺",
       llms: "大型語言模型",
       dataEngineering: "數據工程",
       uiUx: "UI/UX - 網頁應用",
@@ -74,56 +74,56 @@ const zh = {
     },
     content: {
       agentic: {
-        title: "代理式RAG（檢索增強生成）",
-        description: "我們先進的RAG系統結合了信息檢索的能力與生成式人工智能，基於您組織的數據提供上下文準確的回應。非常適合知識庫、客戶支持和內部文檔。"
+        title: "代理式 RAG（檢索增強生成）",
+        description: "我們的先進 RAG 系統結合資訊檢索與生成式 AI，根據組織資料提供上下文準確的回覆，適用於知識庫、客服與內部文件管理。"
       },
       computerVision: {
-        title: "計算機視覺",
-        description: "通過我們的計算機視覺解決方案將視覺數據轉化為可操作的洞察。從對象檢測和人臉識別到質量控制和自動檢查，我們為製造業、零售業、安全和醫療應用構建定制視覺系統。"
+        title: "電腦視覺",
+        description: "將視覺資料轉化為可行洞察。從物體辨識、人臉識別，到品質控制與自動檢測，我們提供零售、製造、安全與醫療的專業解決方案。"
       },
       llms: {
         title: "大型語言模型 (LLMs)",
-        description: "利用為您特定行業需求定制訓練和微調的語言模型的力量。我們的LLM解決方案包括內容生成、摘要、分類、情感分析和理解您業務背景的領域特定助手。"
+        description: "提供為特定產業需求量身訓練與微調的語言模型，應用於內容生成、摘要、分類、情感分析與產業專用助手等。"
       },
       dataEngineering: {
         title: "數據工程",
-        description: "構建強大的數據管道和基礎設施，為您的人工智能倡議提供動力。我們設計可擴展的數據架構，實施ETL流程，並開發數據湖/倉庫，為可靠的人工智能系統奠定基礎。我們的解決方案確保您的數據乾淨、可訪問且準備好進行分析。"
+        description: "打造可靠的數據基礎設施與流程，從 ETL 到資料倉儲，為 AI 系統提供乾淨、可用且具擴展性的數據。"
       },
       uiUx: {
         title: "UI/UX - 網頁應用",
-        description: "為您的人工智能驅動的應用程序創建直觀且吸引人的界面。我們的設計團隊打造使複雜的人工智能能力對終端用戶易於訪問且有價值的用戶體驗。從儀表板和可視化工具到互動式人工智能助手，我們確保您的解決方案既強大又易於使用。"
+        description: "設計直覺且吸引人的界面，讓 AI 應用對使用者友善易用。無論是儀表板、視覺化工具或互動式助理，皆兼顧實用性與美觀。"
       },
       machineLearning: {
         title: "機器學習",
-        description: "開發針對您業務挑戰量身定制的預測模型和決策系統。我們的機器學習解決方案包括需求預測、推薦引擎、異常檢測和優化算法，提高效率並從您的數據中發現洞察。"
+        description: "建立精準的預測模型與決策系統，包含需求預測、推薦系統、異常偵測與優化演算法，提升效率並挖掘商業洞察。"
       }
     },
-    cta: "聯繫我們"
+    cta: "聯絡我們"
   },
   
   // Team Info Section
   teamInfo: {
-    title: "我們的全球團隊",
-    description: "我們的多語言團隊直接與您合作，避免中間商費用，提供一流的定制服務。我們的團隊包括人工智能工程師、機器學習工程師、項目經理、UI/UX設計師和業務開發人員。我們理解文化，並且我們一起說4種語言：中文、英文、西班牙文和葡萄牙文。",
-    locations: "辦公室位於秘魯、台北和印度。"
+    title: "我們的國際團隊",
+    description: "我們的多語團隊與您直接合作，免除中介費用，提供高品質的客製化服務。團隊成員涵蓋 AI 工程師、機器學習專家、專案經理、UI/UX 設計師與業務開發人員，精通中文、英文、西班牙文及葡萄牙文。",
+    locations: "我們在台北、秘魯和印度設有辦公室。"
   },
   
   // Contact Section
   contact: {
-    title: "與我們的人工智能專家聯繫",
-    subtitle: "讓我們討論人工智能如何改變您的業務",
+    title: "聯繫我們的 AI 專家",
+    subtitle: "一起探索 AI 如何改變您的業務",
     form: {
-      name: "您的姓名",
-      email: "電子郵件地址",
-      message: "我們如何幫助您？",
-      submit: "聯繫我們"
+      name: "姓名",
+      email: "電子郵件",
+      message: "請告訴我們您的需求",
+      submit: "送出"
     },
     info: {
-      title: "聯繫我們",
-      description: "我們的團隊準備好幫助您的人工智能項目需求。",
+      title: "聯絡資訊",
+      description: "我們的團隊隨時為您的 AI 專案提供協助。",
       email: "電子郵件",
       emailAddress: "engineering@createfyai.com",
-      location: "全球團隊",
+      location: "全球辦公室",
       locations: "台北 • 秘魯 • 印度"
     }
   },
@@ -131,23 +131,23 @@ const zh = {
   // Contact Page
   contactPage: {
     contactInfo: {
-      title: "聯繫信息",
+      title: "聯絡方式",
       email: "電子郵件：",
       emailAddress: "contact@waytogo.com",
       phone: "電話：",
-      phoneNumber: "+1 (123) 456-7890 (週一至週五，上午9點至下午5點)",
+      phoneNumber: "+1 (123) 456-7890（週一至週五，09:00 - 17:00）",
       address: "地址：",
       fullAddress: "123 Main Street, Cityville, Country"
     },
     countrySelection: {
       title: "選擇您的國家",
-      search: "搜索國家名稱.."
+      search: "搜尋國家名稱..."
     },
     getInTouch: {
-      title: "聯繫我們",
-      consultation: "獲取免費諮詢",
-      subtitle: "想要聯繫我們？我們很樂意聽取您的意見。",
-      formTitle: "填寫註冊表",
+      title: "保持聯繫",
+      consultation: "立即獲取免費諮詢",
+      subtitle: "想聯絡我們嗎？我們期待您的來信。",
+      formTitle: "填寫表單",
       salutation: {
         mr: "先生",
         mrs: "女士",
@@ -157,20 +157,20 @@ const zh = {
         name: "姓名",
         email: "電子郵件",
         password: "密碼",
-        phone: "+91 (手機)",
+        phone: "+91（手機）",
         dob: "出生日期",
         gender: {
           male: "男",
           female: "女",
           others: "其他"
         },
-        address: "住宅地址",
+        address: "住址",
         city: "----城市----",
         country: "----首選國家----",
         submit: "提交"
       },
       callUs: {
-        title: "現在就來電..!!",
+        title: "立即來電洽詢..!!",
         locateUs: "找到我們"
       }
     }
@@ -178,7 +178,7 @@ const zh = {
   
   // Footer
   footer: {
-    copyright: "© 2025 CreatefyAI. 版權所有。"
+    copyright: "© 2025 CreatefyAI. 版權所有"
   }
 };
 
